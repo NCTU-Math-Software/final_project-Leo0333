@@ -1,4 +1,4 @@
-partNumber=[];
+sol=0;
 for ii=1:1000
     part=1;
     for jj=1:ii
@@ -7,17 +7,11 @@ for ii=1:1000
             part=part-floor(part/(10^10))*(10^10);
         end
     end
-    partNumber=[partNumber part];
+    sol=sol+part;
+    if sol>=10^10
+        sol=sol-floor(sol/(10^10))*(10^10);
+    end
 end
-
-sol=0;
- for kk=1:size(partNumber,2)
-        sol=sol+partNumber(kk);
-        if sol>=10^10
-            sol=sol-floor(sol/(10^10))*(10^10);
-        end
- end
-
 fprintf(' solution = %d \n', sol)
         
         
