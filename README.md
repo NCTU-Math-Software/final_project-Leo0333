@@ -1,5 +1,6 @@
 # final_project-Leo0333
 final_project-Leo0333 created by GitHub Classroom
+
 project16試圖計算1^1+2^2+3^3+...1000^1000的小數點前10位數
 
 (n*(10^10)+a)(m*(10^10)+b)=(n*m*10^10+a+b)10^10+ (a*b)----(i)
