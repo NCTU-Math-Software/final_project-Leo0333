@@ -1,7 +1,12 @@
 % Pj10:dice game
 function diceGame(A,PA,B,PB)
+    % example:
+    % A=[1 2 3 4];
+    % PA=[1/4 1/4 1/4 1/4];
+    % B=[2 3 4 5];
+    % PB=[1/2 1/6 1/6 1/6];
     P=possiMatric(A,B);
-    S = sort(P,1,'descend');
+    S = sort(P);
     outP=zeros(size(S,2));
     for ii=1:size(A,2)
         for jj=1:size(B,2)
@@ -15,10 +20,9 @@ function diceGame(A,PA,B,PB)
     end
     format long
     for dd=1:size(S,2)
-        fprintf('The possibility for that A is bigger than B by ',S(dd)); %³o¦æ«Ý­×§ï
+        disp(['The possibility for that A is bigger than B by ',num2str(S(dd)),' is ',num2str(outP(dd))]);
     end
 end
-% ,' is ',outP(dd),'/n'
-   
+
             
         
