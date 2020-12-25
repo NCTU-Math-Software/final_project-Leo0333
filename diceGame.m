@@ -12,7 +12,7 @@ function [B,PB]=diceGame(A,PA,n)
         
         for kk=1:n
             if P(kk)==0
-                P(kk)=6;
+                P(kk)=valueNum;
             end
         end
         
@@ -45,7 +45,7 @@ function [B,PB]=diceGame(A,PA,n)
         
         for kk=1:n
             if P(kk)==0
-                P(kk)=6;
+                P(kk)=valueNum;
             end
         end
         
