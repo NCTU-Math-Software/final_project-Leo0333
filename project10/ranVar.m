@@ -1,9 +1,4 @@
 function [S,outP]=ranVar(A,PA,f,B,PB)
-    % example:
-    % A=[1 2 3 4];
-    % PA=[1/4 1/4 1/4 1/4];
-    % B=[2 3 4 5];
-    % PB=[1/2 1/6 1/6 1/6];
     if nargin==5
         P=possiMatric(A,f,B);
         S = sort(P);
