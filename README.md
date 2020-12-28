@@ -12,3 +12,5 @@ project16試圖計算1^1+2^2+3^3+...1000^1000的小數點前10位數
 
 
 另外 diceGame計算n個骰子點數和的機率分布
+
+請看連結(https://hackmd.io/n3Mgd9vMRrucztJ0yA_MNQ?both)內的內容
